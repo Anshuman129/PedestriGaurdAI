@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="DFD Level 0">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" connect="1">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- External Entity 1 -->
+        <mxCell id="camera" value="Camera System" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="200" width="120" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- External Entity 2 -->
+        <mxCell id="security" value="Security Personnel" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="350" width="140" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- External Entity 3 -->
+        <mxCell id="analyst" value="Data Analyst" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="350" width="120" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Main Process -->
+        <mxCell id="process1" value="PedestriGuard AI System&#xa;(Detection, Tracking, Behavior Analysis)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="230" width="200" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- Data Flow 1 -->
+        <mxCell id="flow1" value="Video Stream" style="endArrow=block;" edge="1" parent="1" source="camera" target="process1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Data Flow 2 -->
+        <mxCell id="flow2" value="Detection Alerts / Activity Info" style="endArrow=block;" edge="1" parent="1" source="process1" target="security">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Data Flow 3 -->
+        <mxCell id="flow3" value="Analytics Reports" style="endArrow=block;" edge="1" parent="1" source="process1" target="analyst">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

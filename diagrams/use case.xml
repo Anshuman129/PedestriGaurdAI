@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Use Case Diagram">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Actor 1 -->
+        <mxCell id="actor1" value="Security Personnel" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="20" y="200" width="40" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Actor 2 -->
+        <mxCell id="actor2" value="System Administrator" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="20" y="350" width="40" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Actor 3 -->
+        <mxCell id="actor3" value="Data Analyst" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="20" y="500" width="40" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- System Boundary -->
+        <mxCell id="system" value="PedestriGuard AI System" style="rounded=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="150" y="100" width="500" height="500" as="geometry"/>
+        </mxCell>
+
+        <!-- Use Cases -->
+        <mxCell id="uc1" value="Monitor Video Feed" style="ellipse;" vertex="1" parent="system">
+          <mxGeometry x="50" y="50" width="160" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc2" value="Detect Pedestrians" style="ellipse;" vertex="1" parent="system">
+          <mxGeometry x="300" y="50" width="160" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc3" value="Track Pedestrians" style="ellipse;" vertex="1" parent="system">
+          <mxGeometry x="50" y="150" width="160" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc4" value="Analyze Behavior" style="ellipse;" vertex="1" parent="system">
+          <mxGeometry x="300" y="150" width="160" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc5" value="Detect Falls" style="ellipse;" vertex="1" parent="system">
+          <mxGeometry x="50" y="250" width="160" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc6" value="View Demographic Insights" style="ellipse;" vertex="1" parent="system">
+          <mxGeometry x="300" y="250" width="160" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc7" value="Generate Reports" style="ellipse;" vertex="1" parent="system">
+          <mxGeometry x="50" y="350" width="160" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc8" value="Manage System Settings" style="ellipse;" vertex="1" parent="system">
+          <mxGeometry x="300" y="350" width="160" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- Connections -->
+        <mxCell id="e1" edge="1" parent="1" source="actor1" target="uc1"/>
+        <mxCell id="e2" edge="1" parent="1" source="actor1" target="uc5"/>
+        <mxCell id="e3" edge="1" parent="1" source="actor2" target="uc8"/>
+        <mxCell id="e4" edge="1" parent="1" source="actor3" target="uc7"/>
+        <mxCell id="e5" edge="1" parent="1" source="actor3" target="uc6"/>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
